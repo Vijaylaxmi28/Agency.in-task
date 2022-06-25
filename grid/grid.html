@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="grid.css">
+
+   <script>
+        function toggleText() {
+  
+            var points = 
+                document.getElementById("points");
+  
+            var showMoreText =
+                document.getElementById("moreText");
+  
+            var buttonText =
+                document.getElementById("textButton");
+  
+
+            if (points.style.display === "none") {
+  
+               
+                showMoreText.style.display = "none";
+  
+                        points.style.display = "inline";
+  
+              
+                buttonText.innerHTML = "Learn More";
+            }
+  
+            else {
+  
+                showMoreText.style.display = "inline";
+  
+            
+                points.style.display = "none";
+  
+                buttonText.innerHTML = "Show Less";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="wrapper">
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="#" style="background-color:powderblue;">Home</a>
+        </li>
+        <li>
+          <a href="#" style="background-color:powderblue;">About</a>
+        </li>
+        <li>
+          <a href="#" style="background-color:powderblue;">Services</a>
+        </li>
+        <li>
+          <a href="#" style="background-color:powderblue;">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Top Container -->
+    <section class="top-container">
+      <header class="showcase">
+        <h1>Vijaylaxmi Paragave</h1>
+        <p>Padre Conceicao College of Engineering</p>
+        <a href="#" class="btn">Read More</a>
+      </header>
+      <div class="top-box top-box-a">
+        <h4>Education-BE</h4>
+        <p class="price">Padre Conceicao College of Engineering</p>
+        <a href="https://pccegoa.edu.in/" class="btn">Website</a>
+      </div>
+      <div class="top-box top-box-b">
+        <h4>Education-HSSC</h4>
+        <p class="price">C.T.Naik Higher Secondary School</p>
+        <a href="" class="btn">Website</a>
+      </div>
+    </section>
+
+    <!-- Boxes Section -->
+    <section class="boxes">
+       <div class="box" style="background-color: powderblue;" ;">
+        <i class="fas fa-cog fa-4x"></i>
+        <h3>Web Development</h3>
+        <p>HTML,CSS,Javascript</p>
+      </div>
+      <div class="box" style="background-color: powderblue;>
+        <i class="fas fa-chart-pie fa-4x"></i>
+        <h3>Programming Languages</h3>
+        <p>C ,C++,Python,Java</p>
+      </div>
+      <div class="box" style="background-color: powderblue;>
+        <i class="fas fa-globe fa-4x"></i>
+        <h3>Soft skills</h3>
+        <p>Good Communication,Passion for learning new things,Teamwork</p>
+      </div>
+     
+      <div class="box" style="background-color: powderblue;>
+        <i class="fas fa-users fa-4x"></i>
+        <h3>Development Softwares used</h3>
+        <p>Visual studio,MySQL</p>
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info">
+      <img src="https://image.ibb.co/j4Qz8x/pic1.jpg" alt="">
+      <div>
+        <h2>Introduction</h2>
+        <p>Ambitious and self-esteemed fresher who is capable of applying technical skills for improvement of the company.
+        <span id="points">...</span>
+         <span id="moreText" style="display:none;">Information technology Engineering student at Padre Conceicao College of Engineering, keen to learn new skills and utilize it to enhance my knowledge and experience.
+         </span>
+       </p>
+        <a href="#" class="btn" onclick="toggleText()" id="textButton">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio">
+      <img src="pic1.jpg" alt="">
+      <img src="pic3.jpg" alt="">
+      <img src="pic4.jpg" alt="">
+      <img src="pic5.jpg" alt="">
+      <img src="pic6.jpg" alt="">
+      <img src="pic7.jpg" alt="">
+      <img src="pic8.png" alt="">
+      <img src="pic9.jpg" alt="">
+      <img src="pic10.jpg" alt="">
+      <img src="pic11.jpg" alt="">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p></p>
+    </footer>
+
+  </div>
+  <!-- Wrapper Ends -->
+
+</body>
+</html>
